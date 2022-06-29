@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./favicon_io/site.webmanifest">
+  
+  
+  
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Belleza&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./box/style.css">
+
+
+    <title>Gerenciador de Cadastro</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="header-title">Cadastro de Clientes</h1>
+        <img src="./img/logo.jpg" alt="logo" class="logo">
+    </header>
+    <main>
+        <button type="button" class="button blue mobile" id="cadastrarCliente">Cadastrar Cliente</button>
+        <table id="tableClient" class="records">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>E-mail</th>
+                    <th>Celular</th>
+                    <th>Cidade</th>
+                    <th>Editar/Excluir</th>
+                </tr>
+            </thead>
+            <tbody>
+               <!-- <tr>
+                    <td>Maria</td>
+                    <td>maria@gmail.com</td>
+                    <td>(11) 97165-1111</td>
+                    <td>Anapolis</td>
+                    <td>
+                        <button type="button" class="button green">editar</button>
+                        <button type="button" class="button red">excluir</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>João Pedro</td>
+                    <td>joao@gmail.com</td>
+                    <td>(11) 97165-2222</td>
+                    <td>Jandira</td>
+                    <td>
+                        <button type="button" class="button green">editar</button>
+                        <button type="button" class="button red">excluir</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Jose da Silva</td>
+                    <td>jose@gmail.com</td>
+                    <td>(11) 97165-3333</td>
+                    <td>São Roque</td>
+                    <td>
+                        <button type="button" class="button green">editar</button>
+                        <button type="button" class="button red">excluir</button>
+                    </td>
+                </tr>-->
+            </tbody>
+        </table>
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <header class="modal-header">
+                    <h2>Novo Cliente</h2>
+                    <span class="modal-close" id="modalClose">&#10006;</span>
+                </header>
+                <form id="form" class="modal-form">
+                    <input type="text" class="modal-field" data-index="new" placeholder="Nome do Cliente" id="nome" required>
+                    <input type="email" class="modal-field" placeholder="e-mail do Cliente" id="email">
+                    <input type="text" class="modal-field" placeholder="Celular do Cliente" id="celular" required>
+                    <input type="text" class="modal-field" placeholder="Cidade do Cliente" id="cidade" required>
+                </form>
+                <footer class="modal-footer">
+                    <button class="button green" id="salvar">Salvar</button>
+                    <button class="button blue" id="cancelar">Cancelar</button>
+                </footer>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h2>Personare - Consultório Odontológico</h2>
+        Copyright &copy; 2022
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>
